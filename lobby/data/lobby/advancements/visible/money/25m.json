@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+        "item": "minecraft:command_block"
+        },
+        "title": "STONKS MAXIMAL",
+        "description": "Obtenir 25M de Money",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+            "player": [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                "lobby.money": {
+                    "min": 25000000
+                }
+                }
+            }
+            ]
+        }
+        }
+    },
+    "parent": "lobby:visible/money/10m"
+}
