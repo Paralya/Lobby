@@ -1,0 +1,19 @@
+{
+   "display": {
+       "icon": {
+           "item": "minecraft:diamond"
+       },
+       "title": "Paralya Lobby",
+       "description": "Paralya Lobby",
+       "announce_to_chat": false,
+       "show_toast": false,
+       "frame": "task",
+       "hidden": true,
+       "background": "minecraft:textures/block/diamond_block.png"
+   },
+   "criteria": {
+    "impossible": {
+        "trigger": "impossible"
+    }
+   }
+}

@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+        "item": "minecraft:repeating_command_block"
+        },
+        "title": "Ça va trop loin",
+        "description": "Obtenir 250M de Money",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+            "player": [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                "lobby.money": {
+                    "min": 250000000
+                }
+                }
+            }
+            ]
+        }
+        }
+    },
+    "parent": "lobby:visible/money/25m"
+}

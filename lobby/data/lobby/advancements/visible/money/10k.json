@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+        "item": "minecraft:iron_ingot"
+        },
+        "title": "Un petit projet?",
+        "description": "Obtenir 10k de Money",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+            "player": [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                "lobby.money": {
+                    "min": 10000
+                }
+                }
+            }
+            ]
+        }
+        }
+    },
+    "parent": "lobby:visible/money/smic"
+}
