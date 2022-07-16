@@ -1,0 +1,1 @@
+kill @e[tag=lobby.pressure_plate]
