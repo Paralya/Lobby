@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "lobby:player/first_join"
+	}
+}
