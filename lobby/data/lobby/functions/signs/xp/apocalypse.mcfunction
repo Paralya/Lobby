@@ -1,5 +1,5 @@
 
-scoreboard players set #xp lobby.data 5000
+scoreboard players set #xp lobby.data 40
 
 function lobby:signs/check_xp
 
