@@ -8,7 +8,6 @@ execute if score #success lobby.data matches 1 run loot spawn ~ ~ ~ loot stardus
 execute if score #success lobby.data matches 1 run data modify entity @e[type=item,sort=nearest,limit=1,nbt={Age:0s,Item:{tag:{stardust:{original:1b}}}}] Owner set from entity @s UUID
 execute if score #success lobby.data matches 1 run data modify entity @e[type=item,sort=nearest,limit=1,nbt={Age:0s,Item:{tag:{stardust:{original:1b}}}}] Item.tag.Enchantments set value [{id:"efficiency",lvl:10}]
 execute if score #success lobby.data matches 1 run data modify entity @e[type=item,sort=nearest,limit=1,nbt={Age:0s,Item:{tag:{stardust:{original:1b}}}}] Item.tag.CanDestroy set value ["gold_ore","obsidian","diamond_ore"]
-execute if score #success lobby.data matches 1 run data modify entity @e[type=item,sort=nearest,limit=1,nbt={Age:0s,Item:{tag:{stardust:{original:1b}}}}] Item.tag.lobby.dont_kill set value 1b
 execute if score #success lobby.data matches 1 run data modify entity @e[type=item,sort=nearest,limit=1,nbt={Age:0s,Item:{tag:{stardust:{original:1b}}}}] Item.tag.lobby.pickaxe set value 1b
 execute if score #success lobby.data matches 1 run data remove entity @e[type=item,sort=nearest,limit=1,nbt={Age:0s,Item:{tag:{stardust:{original:1b}}}}] Item.tag.AttributeModifiers
 

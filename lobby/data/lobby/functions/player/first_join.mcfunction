@@ -11,3 +11,4 @@ execute if score #old lobby.data matches 1 run scoreboard players set @s lobby.l
 
 execute as @a at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 0.25
 team join lobby.team @s
+effect clear @s
