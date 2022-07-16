@@ -9,7 +9,7 @@
 
 #Others
 	execute as @a at @s run function lobby:player/tick
-	execute positioned 0 80 0 run spreadplayers 0 0 10 20 false @e[type=!player,type=!armor_stand,type=!marker,distance=..12]
+	execute positioned 0 80 0 run spreadplayers 0 0 10 20 false @e[type=!player,type=!armor_stand,type=!marker,type=!wither,distance=..12]
 	execute as @a[x=986,y=71,z=997,distance=..3] at @s if block ~ ~-1 ~ slime_block run effect give @s jump_boost 1 20 true
 
 #Mining check

@@ -74,9 +74,9 @@ setblock -4 54 -17 oak_wall_sign[facing=east]{Text1:'{"text":"Solarium","clickEv
 setblock -4 54 -18 oak_wall_sign[facing=east]{Text1:'{"text":"Darkium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/pickaxe/darkium"},"color":"black","bold":true}',Text2:'{"text":"(Efficiency 50)"}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"50000$"}]'}
 
 
-scoreboard players set #3 lobby.data 3
-scoreboard players set #4 lobby.data 4
 scoreboard players set #8 lobby.data 8
+scoreboard players set #9 lobby.data 9
+scoreboard players set #10 lobby.data 10
 scoreboard players set #13 lobby.data 13
 scoreboard players set #24 lobby.data 24
 scoreboard players set #60 lobby.data 60
