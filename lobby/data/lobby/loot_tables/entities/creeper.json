@@ -10,12 +10,6 @@
 					"name": "minecraft:ender_pearl"
 				}
 			],
-			"functions": [
-				{
-					"function": "minecraft:set_nbt",
-					"tag": "{lobby:{dont_kill:1b}}"
-				}
-			],
 			"conditions": [
 				{
 					"condition": "minecraft:random_chance_with_looting",
@@ -31,12 +25,6 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond"
-				}
-			],
-			"functions": [
-				{
-					"function": "minecraft:set_nbt",
-					"tag": "{lobby:{dont_kill:1b}}"
 				}
 			],
 			"conditions": [

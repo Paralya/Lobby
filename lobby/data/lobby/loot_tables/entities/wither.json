@@ -7,24 +7,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:iron_sword",
-					"functions": [
-						{
-							"function": "minecraft:set_damage",
-							"damage": {
-								"min": 0.0,
-								"max": 0.2
-							},
-							"add": false
-						},
-						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:sharpness": 2
-							},
-							"add": false
-						}
-					]
+					"name": "minecraft:diamond_block"
 				}
 			],
 			"conditions": [
@@ -36,24 +19,10 @@
 			]
 		},
 		{
-			"rolls": 1,
-			"bonus_rolls": 0,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:iron_block"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:random_chance_with_looting",
-					"chance": 0.1,
-					"looting_multiplier": 0.05
-				}
-			]
-		},
-		{
-			"rolls": 1,
+			"rolls": {
+				"min": 1,
+				"max": 4
+			},
 			"bonus_rolls": 0,
 			"entries": [
 				{
@@ -64,8 +33,49 @@
 			"conditions": [
 				{
 					"condition": "minecraft:random_chance_with_looting",
-					"chance": 0.01,
-					"looting_multiplier": 0.005
+					"chance": 0.5,
+					"looting_multiplier": 0.25
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 3
+			},
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_block"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance_with_looting",
+					"chance": 0.8,
+					"looting_multiplier": 0.4
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 2
+			},
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:enchanted_book",
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:sharpness": 2
+							}
+						}
+					]
 				}
 			]
 		}
