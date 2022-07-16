@@ -1,32 +1,32 @@
 {
-    "display": {
-        "icon": {
-        "item": "minecraft:diamond"
-        },
-        "title": "Une petite maison",
-        "description": "Obtenir 250k de Money",
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "unlock": {
-        "trigger": "minecraft:tick",
-        "conditions": {
-            "player": [
-            {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                "lobby.money": {
-                    "min": 250000
-                }
-                }
-            }
-            ]
-        }
-        }
-    },
-    "parent": "lobby:visible/money/50k"
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond"
+		},
+		"title": "Une petite maison",
+		"description": "Obtenir 250 000 € dans le jeu du lobby",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"unlock": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"lobby.money": {
+								"min": 250000
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"parent": "lobby:visible/money/50k"
 }

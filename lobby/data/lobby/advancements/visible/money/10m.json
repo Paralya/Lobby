@@ -1,32 +1,32 @@
 {
-    "display": {
-        "icon": {
-        "item": "minecraft:nether_star"
-        },
-        "title": "Un Grand Rêve",
-        "description": "Obtenir 10M de Money",
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "unlock": {
-        "trigger": "minecraft:tick",
-        "conditions": {
-            "player": [
-            {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                "lobby.money": {
-                    "min": 10000000
-                }
-                }
-            }
-            ]
-        }
-        }
-    },
-    "parent": "lobby:visible/money/1m"
+	"display": {
+		"icon": {
+			"item": "minecraft:nether_star"
+		},
+		"title": "Un Grand Rêve",
+		"description": "Obtenir 10 000 000 € dans le jeu du lobby",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"unlock": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"lobby.money": {
+								"min": 10000000
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"parent": "lobby:visible/money/1m"
 }
