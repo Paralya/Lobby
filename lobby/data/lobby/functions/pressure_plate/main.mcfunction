@@ -5,7 +5,7 @@ data modify entity @e[tag=lobby.pressure_plate.execute,limit=1] Rotation set fro
 data modify entity @e[tag=lobby.pressure_plate.execute,limit=1] Rotation[1] set value 0f
 
 scoreboard players set #to_summon lobby.data 100
-execute as @e[tag=lobby.pressure_plate.execute,limit=1] positioned ^ ^ ^-0.2 run function lobby:pressure_plate/summon
+execute as @e[tag=lobby.pressure_plate.execute,limit=1] at @s positioned ^ ^ ^-0.2 run function lobby:pressure_plate/summon
 
 #kills
 kill @e[tag=lobby.pressure_plate.execute]
