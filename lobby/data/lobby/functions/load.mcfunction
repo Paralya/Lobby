@@ -15,13 +15,14 @@ scoreboard objectives add lobby.trigger.manual trigger
 scoreboard objectives add lobby.trigger.spawn trigger
 
 scoreboard objectives add lobby.money dummy {"text":"Classement en €","color":"gold"}
-scoreboard objectives setdisplay sidebar lobby.money
+#scoreboard objectives setdisplay sidebar lobby.money
 scoreboard objectives setdisplay list lobby.money
 
 team add lobby.team
 team modify lobby.team friendlyFire false
 
 scoreboard players set ParalyaLobby load.status 1000
+scoreboard players set #second lobby.data 0
 
 #define storage lobby:main
 #define score_holder #success
