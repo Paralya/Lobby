@@ -3,29 +3,30 @@ scoreboard players reset @s lobby.leave
 scoreboard players operation #time lobby.data = seconds lobby.timestamp
 scoreboard players operation #time lobby.data -= @s lobby.timestamp
 
-scoreboard players operation #second lobby.data = #time lobby.data
-scoreboard players operation #minute lobby.data = #time lobby.data
-scoreboard players operation #hour lobby.data = #time lobby.data
-scoreboard players operation #day lobby.data = #time lobby.data
-scoreboard players operation #month lobby.data = #time lobby.data
+#timestamp decode
 scoreboard players operation #year lobby.data = #time lobby.data
-
-##hmm
-scoreboard players operation #second lobby.data %= #60 lobby.data
-scoreboard players operation #minute lobby.data /= #60 lobby.data
-scoreboard players operation #minute lobby.data %= #60 lobby.data
-scoreboard players operation #hour lobby.data /= #3600 lobby.data
-scoreboard players operation #hour lobby.data %= #24 lobby.data
-
-scoreboard players operation #day lobby.data *= #100 lobby.data
-scoreboard players operation #day lobby.data /= #86400 lobby.data
-scoreboard players operation #day lobby.data %= #3044 lobby.data
-scoreboard players operation #day lobby.data /= #100 lobby.data
-
-scoreboard players operation #month lobby.data /= #2630016 lobby.data
-scoreboard players operation #month lobby.data %= #13 lobby.data
-
 scoreboard players operation #year lobby.data /= #31557600 lobby.data
+scoreboard players operation #time lobby.data %= #31557600 lobby.data
+
+scoreboard players operation #month lobby.data = #time lobby.data
+scoreboard players operation #month lobby.data /= #2630016 lobby.data
+scoreboard players operation #time lobby.data %= #2630016 lobby.data
+
+scoreboard players operation #day lobby.data = #time lobby.data
+scoreboard players operation #day lobby.data /= #86400 lobby.data
+scoreboard players operation #time lobby.data %= #86400 lobby.data
+
+scoreboard players operation #hour lobby.data = #time lobby.data
+scoreboard players operation #hour lobby.data /= #3600 lobby.data
+scoreboard players operation #time lobby.data %= #3600 lobby.data
+
+scoreboard players operation #minute lobby.data = #time lobby.data
+scoreboard players operation #minute lobby.data /= #60 lobby.data
+scoreboard players operation #time lobby.data %= #60 lobby.data
+
+scoreboard players operation #second lobby.data = #time lobby.data
+scoreboard players operation #time lobby.data = seconds lobby.timestamp
+scoreboard players operation #time lobby.data -= @s lobby.timestamp
 
 ##tellraw
 scoreboard players set #success lobby.data 0

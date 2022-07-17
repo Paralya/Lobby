@@ -19,4 +19,4 @@ scoreboard players operation seconds lobby.timestamp += #value lobby.data
 scoreboard players operation #multiplier lobby.data *= #10 lobby.data
 
 data remove storage suso.str:io out.time[-1]
-execute if data storage suso.str:io out.time[0] run function lobby:update_timestamp_loop
+execute if data storage suso.str:io out.time[0] run function lobby:utils/update_timestamp_loop

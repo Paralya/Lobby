@@ -22,7 +22,6 @@ team add lobby.team
 team modify lobby.team friendlyFire false
 
 scoreboard players set ParalyaLobby load.status 1000
-scoreboard players set #second lobby.data 0
 
 #define storage lobby:main
 #define score_holder #success
