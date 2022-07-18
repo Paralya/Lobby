@@ -10,6 +10,7 @@ scoreboard players set #money lobby.data 0
 scoreboard players set #count lobby.data 1
 execute store result score #count lobby.data run data get storage lobby:main temp.Count
 
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_nugget"} run scoreboard players set #money lobby.data 11
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_ingot"} run scoreboard players set #money lobby.data 100
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_block"} run scoreboard players set #money lobby.data 900
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:diamond"} run scoreboard players set #money lobby.data 1000
