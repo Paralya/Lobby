@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": "J'ai des dettes maman !",
+		"description": "Passer en négatif dans le jeu du lobby",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"unlock": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"lobby.money": {
+								"max": -1
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"parent": "lobby:visible/paralya_lobby"
+}

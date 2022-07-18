@@ -59,6 +59,7 @@ scoreboard players set #burst lobby.data 0
 scoreboard players operation #money lobby.data *= #count lobby.data
 execute store success score #burst lobby.data if entity @a[tag=lobby.thrower,scores={lobby.burst=1..}]
 execute if score #burst lobby.data matches 1 run scoreboard players operation #money lobby.data *= #2 lobby.data
+execute if score #burst lobby.data matches 1 if score #money lobby.data matches ..-1 run advancement grant @a[tag=lobby.thrower] only lobby:visible/money/negative_burst
 
 execute unless score #money lobby.data matches 0 run scoreboard players operation @a[tag=lobby.thrower] lobby.money += #money lobby.data
 execute unless score #money lobby.data matches 0 if score #burst lobby.data matches 0 run tellraw @a[tag=lobby.thrower] ["",{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Vous venez de vendre pour "},{"score":{"name":"#money","objective":"lobby.data"}},{"text":" € !"}]
