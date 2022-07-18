@@ -48,6 +48,9 @@ execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.stardust.dog_excrement run scoreboard players set #money lobby.data 10000
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.stardust.lucky_artifact_bag run scoreboard players set #money lobby.data 10000
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:command_block"} run scoreboard players set #money lobby.data 10000
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:enchanted_book"} run scoreboard players set #money lobby.data 100
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:glass_bottle"} run scoreboard players set #money lobby.data 100
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:creeper_head"} run scoreboard players set #money lobby.data 1000
 
 scoreboard players set #burst lobby.data 0
 scoreboard players operation #money lobby.data *= #count lobby.data
