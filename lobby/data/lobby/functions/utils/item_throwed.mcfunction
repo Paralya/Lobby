@@ -51,18 +51,21 @@ execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:enchanted_book"} run scoreboard players set #money lobby.data 100
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:glass_bottle"} run scoreboard players set #money lobby.data 100
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:creeper_head"} run scoreboard players set #money lobby.data 1000
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:compass"} run scoreboard players set #money lobby.data 1
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:slime_ball"} run scoreboard players set #money lobby.data 69
+execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.lobby.starter_pickaxe run scoreboard players set #money lobby.data -1
 
 scoreboard players set #burst lobby.data 0
 scoreboard players operation #money lobby.data *= #count lobby.data
 execute store success score #burst lobby.data if entity @a[tag=lobby.thrower,scores={lobby.burst=1..}]
 execute if score #burst lobby.data matches 1 run scoreboard players operation #money lobby.data *= #2 lobby.data
 
-execute if score #money lobby.data matches 1.. run scoreboard players operation @a[tag=lobby.thrower] lobby.money += #money lobby.data
-execute if score #money lobby.data matches 1.. if score #burst lobby.data matches 0 run tellraw @a[tag=lobby.thrower] ["",{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Vous venez de vendre pour "},{"score":{"name":"#money","objective":"lobby.data"}},{"text":" € !"}]
-execute if score #money lobby.data matches 1.. if score #burst lobby.data matches 1 run tellraw @a[tag=lobby.thrower] ["",{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Vous venez de vendre pour "},{"score":{"name":"#money","objective":"lobby.data"}},{"text":" € !\n(x2 grâce au burst)"}]
-execute if score #money lobby.data matches 1.. run execute as @a[tag=lobby.thrower] at @s run playsound entity.player.levelup ambient @s ~ ~ ~ 0.5 2
-execute if score #money lobby.data matches 1.. run scoreboard players set @a[tag=lobby.thrower] lobby.burst 5
-execute if score #money lobby.data matches 1.. run kill @s
+execute unless score #money lobby.data matches 0 run scoreboard players operation @a[tag=lobby.thrower] lobby.money += #money lobby.data
+execute unless score #money lobby.data matches 0 if score #burst lobby.data matches 0 run tellraw @a[tag=lobby.thrower] ["",{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Vous venez de vendre pour "},{"score":{"name":"#money","objective":"lobby.data"}},{"text":" € !"}]
+execute unless score #money lobby.data matches 0 if score #burst lobby.data matches 1 run tellraw @a[tag=lobby.thrower] ["",{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Vous venez de vendre pour "},{"score":{"name":"#money","objective":"lobby.data"}},{"text":" € !\n(x2 grâce au burst)"}]
+execute unless score #money lobby.data matches 0 run execute as @a[tag=lobby.thrower] at @s run playsound entity.player.levelup ambient @s ~ ~ ~ 0.5 2
+execute unless score #money lobby.data matches 0 run scoreboard players set @a[tag=lobby.thrower] lobby.burst 5
+execute unless score #money lobby.data matches 0 run kill @s
 execute if score #money lobby.data matches 0 run data modify entity @s Owner set from entity @s Thrower
 execute if score #money lobby.data matches 0 run data modify entity @s PickupDelay set value 0s
 
