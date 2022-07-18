@@ -1,0 +1,11 @@
+{
+	"values": [
+		"zombie",
+		"skeleton",
+		"creeper",
+		"wither_skeleton",
+		"wither_skull",
+		"phantom",
+		"iron_golem"
+	]
+}
