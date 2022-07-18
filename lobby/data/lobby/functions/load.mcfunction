@@ -4,6 +4,7 @@ tag Stoupy51 add convention.debug
 scoreboard objectives add lobby.data dummy
 scoreboard objectives add lobby.timestamp dummy
 scoreboard objectives add lobby.teleportation dummy
+scoreboard objectives add lobby.burst dummy
 scoreboard objectives add lobby.foodLevel food
 scoreboard objectives add lobby.leave minecraft.custom:minecraft.leave_game
 
@@ -45,6 +46,7 @@ gamerule spawnRadius 0
 ##Signs
 function lobby:signs/replace
 
+scoreboard players set #2 lobby.data 2
 scoreboard players set #8 lobby.data 8
 scoreboard players set #9 lobby.data 9
 scoreboard players set #10 lobby.data 10
