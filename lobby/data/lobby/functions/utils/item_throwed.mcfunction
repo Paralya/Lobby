@@ -51,7 +51,6 @@ execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:enchanted_book"} run scoreboard players set #money lobby.data 100
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:glass_bottle"} run scoreboard players set #money lobby.data 100
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:creeper_head"} run scoreboard players set #money lobby.data 1000
-execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:compass"} run scoreboard players set #money lobby.data 50
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:slime_ball"} run scoreboard players set #money lobby.data 69
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.lobby.starter_pickaxe run scoreboard players set #money lobby.data -1
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.lobby.manual run scoreboard players set #money lobby.data -69
