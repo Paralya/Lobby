@@ -1,5 +1,6 @@
 {
 	"values": [
+		"lightium:load",
 		"lobby:load"
 	]
 }
