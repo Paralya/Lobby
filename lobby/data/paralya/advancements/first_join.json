@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "lightium:player/first_join"
+		"function": "paralya:player/first_join"
 	}
 }
