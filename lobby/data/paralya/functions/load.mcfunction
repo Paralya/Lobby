@@ -16,12 +16,12 @@ team modify paralya.lumiere prefix {"text":"[Lumière] ","color":"yellow"}
 team modify paralya.paralyien prefix {"text":"[Paralyien] ","color":"aqua"}
 team modify paralya.moderateur prefix {"text":"[Modérateur] ","color":"green"}
 team modify paralya.admin prefix {"text":"[Admin] ","color":"red"}
-team modify paralya.parraine collisionRule never
-team modify paralya.eclaireur collisionRule never
-team modify paralya.lumiere collisionRule never
-team modify paralya.paralyien collisionRule never
-team modify paralya.moderateur collisionRule never
-team modify paralya.admin collisionRule never
+team modify paralya.parraine collisionRule always
+team modify paralya.eclaireur collisionRule always
+team modify paralya.lumiere collisionRule always
+team modify paralya.paralyien collisionRule always
+team modify paralya.moderateur collisionRule always
+team modify paralya.admin collisionRule always
 
 #define storage paralya:main
 #define score_holder #success
