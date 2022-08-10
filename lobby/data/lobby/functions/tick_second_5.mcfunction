@@ -3,5 +3,6 @@
 	scoreboard players set #second_5 lobby.data 0
 
 #Others
-	fill -2 69 -12 2 69 -12 anvil[facing=east] replace #anvil
+	setblock 2 69 -12 anvil[facing=east]
+	setblock -2 69 -12 anvil[facing=east]
 	fill -3 69 -12 3 69 -12 water_cauldron[level=3] replace #cauldrons
