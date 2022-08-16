@@ -11,3 +11,7 @@ execute if score #old lobby.data matches 1 run scoreboard players set @s lobby.l
 
 execute as @a at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 0.25
 effect clear @s
+
+#Badlion warning
+tellraw @s [{"text":"\n","clickEvent":{"action":"open_url","value":"https://cdn.discordapp.com/attachments/999072204195106917/1009137410057187428/unknown.png"}},{"nbt":"ParalyaWarning","storage":"lobby:main","interpret":true},{"text":" Si vous utilisez le Badlion Client, veuillez désactiver l'Occlusion Culling dans la catégorie \"Betterframes\" pour éviter tout problème de texture ! Cliquez [ici] pour voir de quoi il s'agit"},"\n"]
+

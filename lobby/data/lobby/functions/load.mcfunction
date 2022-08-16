@@ -28,6 +28,7 @@ scoreboard players set ParalyaLobby load.status 1000
 #define score_holder #temp
 #define score_holder #pos
 
+data modify storage lobby:main ParalyaWarning set value '[{"text":"[ParalyaWarning]","color":"gold"}]'
 data modify storage lobby:main Paralya set value '[{"text":"[","color":"dark_aqua"},{"text":"Paralya","color":"aqua"},{"text":"]","color":"dark_aqua"}]'
 
 gamerule spectatorsGenerateChunks false
