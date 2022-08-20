@@ -1,5 +1,5 @@
 
-data modify storage lobby:main temp set from storage suso.str:io out.time[-1]
+data modify storage lobby:main temp set from storage suso.str:io out.time[0]
 
 scoreboard players set #value lobby.data 0
 execute if score #value lobby.data matches 0 if data storage lobby:main {temp:"1"} run scoreboard players set #value lobby.data 1
@@ -16,7 +16,7 @@ execute if score #value lobby.data matches 0 if data storage lobby:main {temp:"9
 
 scoreboard players operation #value lobby.data *= #multiplier lobby.data
 scoreboard players operation seconds lobby.timestamp += #value lobby.data
-scoreboard players operation #multiplier lobby.data *= #10 lobby.data
+scoreboard players operation #multiplier lobby.data /= #10 lobby.data
 
-data remove storage suso.str:io out.time[-1]
-execute if data storage suso.str:io out.time[0] run function lobby:utils/update_timestamp_loop
+data remove storage suso.str:io out.time[0]
+execute if score #multiplier lobby.data matches 1.. run function lobby:utils/update_timestamp_loop
