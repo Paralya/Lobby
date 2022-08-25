@@ -4,8 +4,8 @@ tp @s 1000 72 1000 180 0
 scoreboard players set #old lobby.data 0
 execute store success score #old lobby.data if score @s Sell matches -2147483648..2147483647
 
-execute if score #old lobby.data matches 0 run tellraw @a ["\n",{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Souhaitez tous la bienvenue à "},{"selector":"@s","color":"aqua"},{"text":" !"},"\n"]
-execute if score #old lobby.data matches 1 run tellraw @a ["\n",{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Souhaitez tous la bienvenue notre ancien de Paralya V1 : "},{"selector":"@s","color":"aqua"},{"text":" !"},"\n"]
+execute if score #old lobby.data matches 0 run tellraw @a [{"text":"\n","clickEvent":{"action":"open_url","value":"https://paralya.fr/"}},{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Souhaitez tous la bienvenue à "},{"selector":"@s","color":"aqua"},{"text":" ! N'hésite pas à rejoindre le discord du serveur depuis le site [ici]\n"}]
+execute if score #old lobby.data matches 1 run tellraw @a [{"text":"\n","clickEvent":{"action":"open_url","value":"https://paralya.fr/"}},{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Souhaitez tous la bienvenue notre ancien de Paralya V1 : "},{"selector":"@s","color":"aqua"},{"text":" ! N'hésite pas à rejoindre le discord du serveur depuis le site [ici]\n"}]
 execute if score #old lobby.data matches 1 run scoreboard players set @s lobby.timestamp 1593468000
 execute if score #old lobby.data matches 1 run scoreboard players set @s lobby.leave 1
 
