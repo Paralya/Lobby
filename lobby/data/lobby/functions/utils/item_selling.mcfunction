@@ -66,4 +66,5 @@ execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_shovel"} run scoreboard players set #money lobby.data 5
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_hoe"} run scoreboard players set #money lobby.data 5
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_bars"} run scoreboard players set #money lobby.data 5
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:minecart"} run scoreboard players set #money lobby.data 5
 
