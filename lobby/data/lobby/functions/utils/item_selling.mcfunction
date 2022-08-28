@@ -1,5 +1,5 @@
 
-execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.stardust.original run scoreboard players set #money lobby.data 10000
+execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.stardust.original unless data storage lobby:main temp.tag.stardust.normal run scoreboard players set #money lobby.data 10000
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.stardust.life_crystal run scoreboard players set #money lobby.data 1000
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.stardust.dog_excrement run scoreboard players set #money lobby.data 10000
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.stardust.lucky_artifact_bag run scoreboard players set #money lobby.data 10000
