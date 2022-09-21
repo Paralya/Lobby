@@ -3,7 +3,7 @@
 	scoreboard players set #tick_2 lobby.data 0
 
 #Others
-	execute as @e[type=marker,tag=lobby.teleporter] at @s run function lobby:portals/main
+	execute as @e[type=marker,tag=lobby.teleporter] at @s run function lobby:portals/
 	execute as @a at @s run function lobby:player/tick_2
 
 #Mining check
