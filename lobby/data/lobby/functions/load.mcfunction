@@ -7,6 +7,8 @@ scoreboard objectives add lobby.teleportation dummy
 scoreboard objectives add lobby.burst dummy
 scoreboard objectives add lobby.foodLevel food
 scoreboard objectives add lobby.leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add lobby.prestige_multiplier dummy
+scoreboard objectives add lobby.prestige dummy
 
 scoreboard objectives add lobby.mined.gold_ore minecraft.mined:minecraft.gold_ore
 scoreboard objectives add lobby.mined.diamond_ore minecraft.mined:minecraft.diamond_ore
@@ -60,3 +62,4 @@ scoreboard players set #3600 lobby.data 3600
 scoreboard players set #86400 lobby.data 86400
 scoreboard players set #2630016 lobby.data 2630016
 scoreboard players set #31557600 lobby.data 31557600
+

@@ -8,6 +8,7 @@ execute if score #old lobby.data matches 0 run tellraw @a [{"text":"\n","clickEv
 execute if score #old lobby.data matches 1 run tellraw @a [{"text":"\n","clickEvent":{"action":"open_url","value":"https://paralya.fr/"}},{"nbt":"Paralya","storage":"lobby:main","interpret":true},{"text":" Souhaitez tous la bienvenue notre ancien de Paralya V1 : "},{"selector":"@s","color":"aqua"},{"text":" ! N'hésite pas à rejoindre le discord du serveur depuis le site [ici]\n"}]
 execute if score #old lobby.data matches 1 run scoreboard players set @s lobby.timestamp 1593468000
 execute if score #old lobby.data matches 1 run scoreboard players set @s lobby.leave 1
+scoreboard players set @s lobby.money 0
 
 execute as @a at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 0.25
 effect clear @s

@@ -6,6 +6,7 @@ execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.lobby.starter_pickaxe run scoreboard players set #money lobby.data -1
 execute if score #money lobby.data matches 0 if data storage lobby:main temp.tag.lobby.manual run scoreboard players set #money lobby.data -69
 
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:lapis_lazuli"} run scoreboard players set #money lobby.data 5
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_nugget"} run scoreboard players set #money lobby.data 5
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_ingot"} run scoreboard players set #money lobby.data 50
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:iron_block"} run scoreboard players set #money lobby.data 450
@@ -46,7 +47,9 @@ execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:creeper_head"} run scoreboard players set #money lobby.data 1000
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:slime_ball"} run scoreboard players set #money lobby.data 69
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:slime_block"} run scoreboard players set #money lobby.data 621
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:book"} run scoreboard players set #money lobby.data 100
 
+execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:blue_dye"} run scoreboard players set #money lobby.data 5
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:anvil"} run scoreboard players set #money lobby.data 5
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:potion"} run scoreboard players set #money lobby.data 5
 execute if score #money lobby.data matches 0 if data storage lobby:main temp{id:"minecraft:bucket"} run scoreboard players set #money lobby.data 5
