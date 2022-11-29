@@ -41,6 +41,7 @@ setblock 14 45 2 oak_wall_sign[facing=west]{Text1:'{"text":"Sticks","clickEvent"
 setblock -4 54 -16 air
 setblock -4 54 -17 air
 setblock -4 54 -18 air
+setblock -4 55 -17 air
 setblock 4 54 -16 air
 setblock 4 54 -17 air
 setblock 4 54 -18 air
@@ -51,6 +52,7 @@ setblock 0 55 -14 air
 setblock -4 54 -16 oak_wall_sign[facing=east]{Text1:'{"text":"Legendarium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/pickaxe/legendarium"},"color":"green","bold":true}',Text2:'{"text":"(Efficiency 50)"}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"50000 €"}]'}
 setblock -4 54 -17 oak_wall_sign[facing=east]{Text1:'{"text":"Solarium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/pickaxe/solarium"},"color":"gold","bold":true}',Text2:'{"text":"(Efficiency 50)"}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"50000 €"}]'}
 setblock -4 54 -18 oak_wall_sign[facing=east]{Text1:'{"text":"Darkium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/pickaxe/darkium"},"color":"black","bold":true}',Text2:'{"text":"(Efficiency 50)"}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"50000 €"}]'}
+setblock -4 55 -17 oak_wall_sign[facing=east]{Text1:'{"text":"Book","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/book"},"color":"gold","bold":true}',Text2:'{"text":"(Sans enchantement)"}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"5000 €"}]'}
 setblock 4 54 -16 oak_wall_sign[facing=west]{Text1:'{"text":"Legendarium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/leggings/legendarium"},"color":"green","bold":true}',Text2:'{"text":"Leggings","color":"green","bold":true}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"200000 €"}]'}
 setblock 4 54 -17 oak_wall_sign[facing=west]{Text1:'{"text":"Solarium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/leggings/solarium"},"color":"gold","bold":true}',Text2:'{"text":"Leggings","color":"gold","bold":true}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"200000 €"}]'}
 setblock 4 54 -18 oak_wall_sign[facing=west]{Text1:'{"text":"Darkium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/leggings/darkium"},"color":"black","bold":true}',Text2:'{"text":"Leggings","color":"black","bold":true}',Text3:'{"text":"---------------"}',Text4:'["",{"text":"200000 €"}]'}
