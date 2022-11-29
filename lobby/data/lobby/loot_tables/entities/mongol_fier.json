@@ -68,6 +68,23 @@
 					"looting_multiplier": 0.2
 				}
 			]
+		},
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherite_ingot"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance_with_looting",
+					"chance": 0.4,
+					"looting_multiplier": 0.2
+				}
+			]
 		}
 	]
 }
