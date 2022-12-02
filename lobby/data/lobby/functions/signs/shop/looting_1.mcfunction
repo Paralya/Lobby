@@ -7,3 +7,4 @@ data modify storage lobby:main Item set value '[{"text":"un livre ","color":"whi
 execute if score #success lobby.data matches 1 run give @s enchanted_book{StoredEnchantments:[{id:"looting",lvl:1}]}
 
 function lobby:signs/decode
+

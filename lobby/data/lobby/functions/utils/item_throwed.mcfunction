@@ -20,10 +20,8 @@ execute if score #burst lobby.data matches 1 run scoreboard players operation #m
 execute if score #burst lobby.data matches 1 if score #money lobby.data matches ..-1 run advancement grant @a[tag=lobby.thrower] only lobby:visible/money/negative_burst
 
 #Prestige
-scoreboard players set #prestige_multiplier lobby.data 0
-scoreboard players operation #prestige_multiplier lobby.data = @a[tag=lobby.thrower,limit=1] lobby.prestige_multiplier
 scoreboard players operation #prestige_bonus lobby.data = #money lobby.data
-scoreboard players operation #prestige_bonus lobby.data *= #prestige_multiplier lobby.data
+scoreboard players operation #prestige_bonus lobby.data *= @a[tag=lobby.thrower,limit=1] lobby.prestige_multiplier
 scoreboard players operation #prestige_bonus lobby.data /= #100 lobby.data
 scoreboard players operation #money lobby.data += #prestige_bonus lobby.data
 

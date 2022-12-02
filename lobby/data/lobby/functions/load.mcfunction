@@ -16,12 +16,13 @@ scoreboard objectives add lobby.mined.obsidian minecraft.mined:minecraft.obsidia
 
 scoreboard objectives add lobby.trigger.manual trigger
 scoreboard objectives add lobby.trigger.spawn trigger
+scoreboard objectives add lobby.trigger.prestige trigger
 
 scoreboard objectives add lobby.money dummy {"text":"Classement en €","color":"gold"}
 #scoreboard objectives setdisplay sidebar lobby.money
 scoreboard objectives setdisplay list lobby.money
 
-scoreboard players set ParalyaLobby load.status 1000
+scoreboard players set ParalyaLobby load.status 1010
 
 #define storage lobby:main
 #define score_holder #success

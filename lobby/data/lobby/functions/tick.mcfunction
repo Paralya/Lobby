@@ -14,3 +14,4 @@
 	execute as @e[tag=lobby.text.gold] at @s run function lobby:utils/money_text
 	execute as @e[type=item,tag=!lobby.checked] run function lobby:utils/tick_item
 	execute as @e[type=phantom] run data remove entity @s Fire
+
