@@ -49,6 +49,7 @@ setblock 4 55 -16 air
 setblock 4 55 -17 air
 setblock 4 55 -18 air
 setblock 0 55 -14 air
+setblock 0 54 -20 air
 setblock -4 54 -16 oak_wall_sign[facing=east]{Text1:'{"text":"Legendarium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/pickaxe/legendarium"},"color":"green","bold":true}',Text2:'{"text":"(Efficiency 50)"}',Text3:'{"text":"---------------"}',Text4:'[{"text":"50,000 €"}]'}
 setblock -4 54 -17 oak_wall_sign[facing=east]{Text1:'{"text":"Solarium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/pickaxe/solarium"},"color":"gold","bold":true}',Text2:'{"text":"(Efficiency 50)"}',Text3:'{"text":"---------------"}',Text4:'[{"text":"50,000 €"}]'}
 setblock -4 54 -18 oak_wall_sign[facing=east]{Text1:'{"text":"Darkium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/pickaxe/darkium"},"color":"black","bold":true}',Text2:'{"text":"(Efficiency 50)"}',Text3:'{"text":"---------------"}',Text4:'[{"text":"50,000 €"}]'}
@@ -60,7 +61,7 @@ setblock 4 55 -16 oak_wall_sign[facing=west]{Text1:'{"text":"Legendarium","click
 setblock 4 55 -17 oak_wall_sign[facing=west]{Text1:'{"text":"Solarium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/chestplate/solarium"},"color":"gold","bold":true}',Text2:'{"text":"Chestplate","color":"gold","bold":true}',Text3:'{"text":"---------------"}',Text4:'[{"text":"200,000 €"}]'}
 setblock 4 55 -18 oak_wall_sign[facing=west]{Text1:'{"text":"Darkium","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/chestplate/darkium"},"color":"black","bold":true}',Text2:'{"text":"Chestplate","color":"black","bold":true}',Text3:'{"text":"---------------"}',Text4:'[{"text":"200,000 €"}]'}
 setblock 0 55 -14 oak_wall_sign[facing=north]{Text1:'{"text":"Giant Slime","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/xp/giant_slime"},"color":"green"}',Text2:'{"text":"(Boss)","color":"green"}',Text3:'{"text":"---------------"}',Text4:'[{"text":"50 Levels","color":"white"}]'}
-setblock 0 54 -20 oak_wall_sign[facing=south]{Text2:'{"text":"Informations","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/prestige"},"color":"dark_purple","bold":true}',Text3:'{"text":"de Prestige","color":"dark_purple","bold":true}'}
+setblock 0 54 -20 oak_wall_sign[facing=south]{Text2:'{"text":"Informations","clickEvent":{"action":"run_command","value":"execute at @s run function lobby:signs/shop/prestige"},"color":"dark_purple","bold":true}',Text3:'{"text":"de Prestige","clickEvent":{"action":"run_command","value":"scoreboard players reset #price lobby.data"},"color":"dark_purple","bold":true}'}
 
 
 ##Obsidian shop
